@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الألغاز</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="start-screen" class="screen active-screen">
+            <h1>لعبة الألغاز</h1>
+            <p class="presenter-name">إعداد وتقديم: قيس طلال الجازي</p>
+            <input type="text" id="player-name-input" placeholder="ادخل اسمك">
+            <button id="start-btn">ابدأ اللعب</button>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <h2 id="player-name-display"></h2>
+            <div class="header">
+                <span class="score">النتيجة: <span id="score-display">0</span></span>
+                <span id="question-number"></span>
+            </div>
+            <p id="question-text"></p>
+            <div id="options-container" class="options-grid"></div>
+            <p id="feedback-text"></p>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <h2 id="end-player-name"></h2>
+            <p>انتهت اللعبة! نتيجتك النهائية:</p>
+            <div class="final-score-box">
+                <span id="final-score">0</span>
+                <span>/ 100</span>
+            </div>
+            <p id="final-message"></p>
+            <button id="restart-btn">العب مرة أخرى</button>
+        </div>
+        
+        <p class="copyright">حقوق الملكية الفكرية قيس الجازي 2025</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
